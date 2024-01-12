@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') -%>
+<h1>Home</h1>
+
+<%= con1 %>
+<% po.forEach(function(e){%>
+
+<h2><%=e.title%></h2>
+<p><%=e.content.substring(0,50) %>
+<a style="font-size:15px;   "href="/posts/<%=e.title%>">Read More</a>
+</p>
+
+
+
+
+  <% });%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer.ejs') -%>
